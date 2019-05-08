@@ -1,0 +1,6 @@
+This is how you should submit your coding assignmnets from now on:
+*1/* Create a Zip folder containing  *the   .java files*  (For example,  if the hw requires you to write two programs so you have program1.java and program2.java) AND a *readMe text file* that contains any information that we the TAs need to know about your programs
+*2/* Name that folder as follows: *yourUserName_HW#.zip*
+*3/* Do not forget to include *header comments* in all your java files :
+//Full Name
+//UserID (edited) 
