@@ -1,3 +1,16 @@
+// ba555
+// Bhautik Amin
+// Drexel ID: 13618816
+// CS570 Assignment 6 Part 2: 2D Arrays
+
+
+// For Try-Catch Blocks Exception
+import java.util.InputMismatchException;
+
+
+/*
+
+*/
 
 
 public class ba555_hw6p2 {
@@ -31,35 +44,130 @@ public class ba555_hw6p2 {
         {   // Prompt user for data
             while(user_input)
             {
-                // Prompt the user for input
-                System.out.println("Enter sales person number: ");
-                sales_worker = obj_scan.nextInt();
-                // Prompt the user for a product number
-                System.out.println("Enter a product number: ");
-                product = obj_scan.nextInt();
-                // Prompt user for the amount
-                System.out.println("Enter the amount: ");
-                amount = obj_scan.nextDouble();
-                // Update the table
-                sales_table[sales_worker-1][product-1] += amount;
-                // Ask user if they want to continue inputting data
-                System.out.println("Would you like to continue? (Enter Y or N): ");
-                user_ans = obj_scan.next();
-                if (user_ans.equals("N") || user_ans.equals("n"))
+
+                // Try-Catch block for sales worker number
+                try
                 {
-                    System.out.println("Moving on");
-                    user_input = false;
-                    break;
-                }
-                else if (user_ans.equals("Y") || user_ans.equals("y"))
-                {
-                    System.out.println("Continuing");
+                    // Prompt the user for input
+                    System.out.println("Enter sales person number (1-5): ");
+                    sales_worker = obj_scan.nextInt();
+                    // User validation if the sales number is correct
+                    if (sales_worker >= 1 && sales_worker <= 5)
+                    {
+                        // Sales Worker number is valid, so we can continue with the prompting
+                    }
+                    else
+                    {
+                        // If user inputs an invalid employee ID just quit the program
+                        System.out.println("Invalid Sales Person Number, Quitting the program");
+                        user_input = false;
+                        main_loop = false;
+                    }
 
                 }
-                else
+                catch (InputMismatchException e)
                 {
-                    System.out.println("Input not valid, continuing");
+                    System.out.println("Invalid input, quitting the program");
+                    user_input = false;
+                    main_loop = false;
+                    System.out.println(e);
+
                 }
+                
+                // Try-Catch block for product number
+                try
+                {
+                    // Prompt the user for a product number
+                    System.out.println("Enter a product number: ");
+                    product = obj_scan.nextInt();
+                    // User validation if the product number is correct
+                    if (product >= 1 && product <= 4)
+                    {
+                        // product number is valid, so we can continue with the prompting
+                    }
+                    else
+                    {
+                        // If user inputs an invalid employee ID just quit the program
+                        System.out.println("Invalid Product Number, Quitting the program");
+                        user_input = false;
+                        main_loop = false;
+                    }
+
+                }
+                catch (InputMismatchException e)
+                {
+                    System.out.println("Invalid input, quitting the program");
+                    user_input = false;
+                    main_loop = false;
+                    System.out.println(e);
+                }
+
+                // Try-Catch block for sales amount
+                try
+                {
+                    // Prompt user for the amount
+                    System.out.println("Enter the amount: ");
+                    amount = obj_scan.nextDouble();
+                    // For user validation, amount needs to be a value that is greater or equal to zero
+                    if (amount >= 0)
+                    {
+                        // We can continue
+                    }
+                    else
+                    {
+                        // If user inputs an invalid employee ID just quit the program
+                        System.out.println("Invalid Amount Number, Quitting the program");
+                        user_input = false;
+                        main_loop = false;
+                    }
+
+
+                }
+                catch(InputMismatchException e)
+                {
+                    System.out.println("Invalid input, quitting the program");
+                    user_input = false;
+                    main_loop = false;
+                    System.out.println(e);
+
+                }
+
+                // Update table since we got past all user validation
+                sales_table[sales_worker-1][product-1] += amount;
+                
+
+                // Try-Catch block for user secondary input
+                try
+                {
+                    // Ask user if they want to continue inputting data
+                    System.out.println("Would you like to continue? (Enter Y or N): ");
+                    user_ans = obj_scan.next();
+                    if (user_ans.equals("N") || user_ans.equals("n"))
+                     {
+                        System.out.println("Tabulating Data");
+                        user_input = false;
+                    }   
+                    else if (user_ans.equals("Y") || user_ans.equals("y"))
+                    {
+                        System.out.println("Continuing data input");
+
+                    }   
+                    else
+                    {
+                        System.out.println("Input not valid, moving to tabulating data");
+                        user_input = false;
+                    }
+
+                }
+                catch(InputMismatchException e)
+                {
+                    System.out.println("Input not valid, quitting the program");
+                    user_input = false;
+                    main_loop = false;
+                    System.out.println(e);
+
+                }
+                
 
             }
             // Display table
@@ -94,10 +202,9 @@ public class ba555_hw6p2 {
                 grand_total = 0.0;
 
             }
+            // Quit Program
+            System.out.println("Thank you, exiting the program");
             main_loop = false;
-            
-
-
         }
         
 
