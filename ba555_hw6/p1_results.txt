@@ -1,0 +1,80 @@
+Insertion Sort for Array Size: 50000
+Insertion Sort Time: 11020
+Insertion Sort # of Comparisions: 619953364
+Insertion Sort # of Swaps: 619953364
+Insertion Sort for Array Size: 100000
+Insertion Sort Time: 41498
+Insertion Sort # of Comparisions: 2471457401
+Insertion Sort # of Swaps: 2471457401
+Insertion Sort for Array Size: 200000
+Insertion Sort Time: 154348
+Insertion Sort # of Comparisions: 9905194393
+Insertion Sort # of Swaps: 9905194393
+Insertion Sort for Array Size: 300000
+Insertion Sort Time: 355907
+Insertion Sort # of Comparisions: 22277032356
+Insertion Sort # of Swaps: 22277032356
+Insertion Sort for Array Size: 400000
+Insertion Sort Time: 621139
+Insertion Sort # of Comparisions: 39572458715
+Insertion Sort # of Swaps: 39572458715
+Selection Sort for Array Size: 50000
+Selection Sort Time: 1953
+Selection Sort # of Comparisions: 204421
+Selection Sort # of Swaps: 49999
+Selection Sort for Array Size: 100000
+Selection Sort Time: 7999
+Selection Sort # of Comparisions: 405730
+Selection Sort # of Swaps: 99999
+Selection Sort for Array Size: 200000
+Selection Sort Time: 35997
+Selection Sort # of Comparisions: 816012
+Selection Sort # of Swaps: 199999
+Selection Sort for Array Size: 300000
+Selection Sort Time: 71417
+Selection Sort # of Comparisions: 1224098
+Selection Sort # of Swaps: 299999
+Selection Sort for Array Size: 400000
+Selection Sort Time: 127163
+Selection Sort # of Comparisions: 1631332
+Selection Sort # of Swaps: 399999
+Merge Sort for Array Size: 50000
+Merge Sort Time: 1031
+Merge Sort # of Comparisions: 716439
+Merge Sort # of Swaps: 716439
+Merge Sort for Array Size: 100000
+Merge Sort Time: 4718
+Merge Sort # of Comparisions: 1532629
+Merge Sort # of Swaps: 1532629
+Merge Sort for Array Size: 200000
+Merge Sort Time: 14468
+Merge Sort # of Comparisions: 3263990
+Merge Sort # of Swaps: 3263990
+Merge Sort for Array Size: 300000
+Merge Sort Time: 30341
+Merge Sort # of Comparisions: 5068801
+Merge Sort # of Swaps: 5068801
+Merge Sort for Array Size: 400000
+Merge Sort Time: 53309
+Merge Sort # of Comparisions: 6924938
+Merge Sort # of Swaps: 6924938
+Quick Sort for Array Size: 50000
+Quick Sort Time: 110
+Quick Sort # of Comparisions: 12144889
+Quick Sort # of Swaps: 140689
+Quick Sort for Array Size: 100000
+Quick Sort Time: 250
+Quick Sort # of Comparisions: 47078685
+Quick Sort # of Swaps: 278429
+Quick Sort for Array Size: 200000
+Quick Sort Time: 969
+Quick Sort # of Comparisions: 177148362
+Quick Sort # of Swaps: 556002
+Quick Sort for Array Size: 300000
+Quick Sort Time: 79
+Quick Sort # of Comparisions: 11860912
+Quick Sort # of Swaps: 143401
+Quick Sort for Array Size: 400000
+Quick Sort Time: 4375
+Quick Sort # of Comparisions: 740734604
+Quick Sort # of Swaps: 1112511

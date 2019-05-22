@@ -1,6 +1,12 @@
-This is how you should submit your coding assignmnets from now on:
-*1/* Create a Zip folder containing  *the   .java files*  (For example,  if the hw requires you to write two programs so you have program1.java and program2.java) AND a *readMe text file* that contains any information that we the TAs need to know about your programs
-*2/* Name that folder as follows: *yourUserName_HW#.zip*
-*3/* Do not forget to include *header comments* in all your java files :
-//Full Name
-//UserID (edited) 
+A zipped folder titled ABC123_hwX.zip that contains the following:
+A README.txt titled README.txt
+
+The java files named ABC123_hwXpX.java
+For example, for assignment 5, if I were to submit the assignment I would submit the following:
+src322_hw5.zip
+- README.txt
+- src322_hw5p1.java
+- src322_hw5p2.java
+We will not be deducting points this week for incorrect file formats. This format makes it much easier for the TAs to grade. If you have any questions, please let me know.
+Thank you,
+Charlie, Amira, and Samyam
