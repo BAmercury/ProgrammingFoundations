@@ -10,6 +10,19 @@ import java.util.InputMismatchException;
 
 /*
 
+    This program demonstrates how to use 2-D arrays. 
+    The user is prompted to input the following data:
+        - sales person number
+        - product number
+        - sales amount
+    The program will continuouly prompt the user 
+    This input is checked for possible type errors (Mismatch exceptions) and then checked if it 
+    meets the boundaries specfied in the assignment outlines (user validation)
+
+    The data saved to a 2-D array and totals are calculated by rows and by columns
+
+    The program that outputs the formatted table to console and quits the program
+
 */
 
 
