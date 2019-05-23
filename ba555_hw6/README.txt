@@ -6,7 +6,7 @@ Drexel ID: 13618816
 
 My submission contains the following files:
     - ba555_hw6p1.java
-    - ba555hw6p2.java
+    - ba555_hw6p2.java
     - MergeSort.java
     - QuickSort.java
     - InsertionSort.java
@@ -14,6 +14,20 @@ My submission contains the following files:
 
 
 Part 1:
+
+The given sorting algorithm files have been modified to expose public variables that are used to keep track of the number of comaprisions made, as well as number of swaps made. The main driver program sequentially goes through each algorithm and tests it against various loads (varying array sizes). The main driver program runs through the following for each sorting algorithm:
+        1. Instantiate a sort object from the given class
+        2. Get the star time (milliseconds (ms) )
+        3. Begin the sort
+        4. Get the end time (ms)
+        5. Compute the elapsed time
+        6. Print the array size, algorithm type, and time elapsed (In Milliseconds)
+        > Repeat for the next array size or repeat cycle for next algorithm
+The program tests the algorithms in the following order:
+    - InsertionSort
+    - Selection Sort
+    - Merge Sort
+    - Quick Sort
 
 
 

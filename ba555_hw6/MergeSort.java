@@ -51,7 +51,6 @@ public class MergeSort {
          else 
             combined[ combinedIndex++ ] = data[ rightIndex++ ];
             // Swap has been made
-            //val_swap += middle1 - leftIndex + 1;
             val_swap++;
          // Comparision made
          val_compare++;

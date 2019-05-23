@@ -1,3 +1,46 @@
+// ba555
+// Bhautik Amin
+// Drexel ID: 13618816
+// CS570 Assignment 6 Part 1: Sorting Algorithms
+
+
+/*
+    This program tests various sorting algorithms in terms of their speed with increasing array sizes. 
+    The following array sizes are used:
+        - 50K
+        - 100K
+        - 200K
+        - 300K
+        - 400K
+
+    This program utilizes algorithms implemented and provided. The following files must be included within the same directory as this program:
+        - MergeSort.java
+        - QuickSort.java
+        - InsertionSort.java
+        - SelectionSort.java
+    These classes have been modified to include exposed public variables that keep track of the following:
+        - Number of swaps made
+        - Number of comaprisions made
+    
+    For each type of sorting algorithm, this program tests it with the listed array sizes and 
+    prints out the corresponding time elapsed in milliseconds. For each test case the program follows the general format:
+
+        1. Instantiate a sort object from the given class
+        2. Get the star time (milliseconds (ms) )
+        3. Begin the sort
+        4. Get the end time (ms)
+        5. Compute the elapsed time
+        6. Print the array size, algorithm type, and time elapsed
+        > Repeat for the next array size or repeat cycle for next algorithm
+
+
+
+*/
+
+
+
+
+
 public class ba555_hw6p1 {
 
 
@@ -322,7 +365,7 @@ public class ba555_hw6p1 {
         System.out.println("Quick Sort # of Swaps: " + obj_qui_sort.val_swap);
         //================================================================================================
         // Quick Sort 300k
-        obj_qui_sort = new QuickSort(s_50);
+        obj_qui_sort = new QuickSort(s_300);
         // Get time before sort
         start_time = System.currentTimeMillis();
         // Perform the sort
