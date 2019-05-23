@@ -90,6 +90,7 @@ public class ba555_hw6p2 {
                         System.out.println("Invalid Sales Person Number, Quitting the program");
                         user_input = false;
                         main_loop = false;
+                        System.exit(0);
                     }
 
                 }
@@ -99,6 +100,7 @@ public class ba555_hw6p2 {
                     user_input = false;
                     main_loop = false;
                     System.out.println(e);
+                    System.exit(0);
 
                 }
                 
@@ -119,6 +121,7 @@ public class ba555_hw6p2 {
                         System.out.println("Invalid Product Number, Quitting the program");
                         user_input = false;
                         main_loop = false;
+                        System.exit(0);
                     }
 
                 }
@@ -128,6 +131,7 @@ public class ba555_hw6p2 {
                     user_input = false;
                     main_loop = false;
                     System.out.println(e);
+                    System.exit(0);
                 }
 
                 // Try-Catch block for sales amount
@@ -147,6 +151,7 @@ public class ba555_hw6p2 {
                         System.out.println("Invalid Amount Number, Quitting the program");
                         user_input = false;
                         main_loop = false;
+                        System.exit(0);
                     }
 
 
@@ -157,6 +162,7 @@ public class ba555_hw6p2 {
                     user_input = false;
                     main_loop = false;
                     System.out.println(e);
+                    System.exit(0);
 
                 }
 
@@ -194,6 +200,7 @@ public class ba555_hw6p2 {
                     user_input = false;
                     main_loop = false;
                     System.out.println(e);
+                    System.exit(0);
 
                 }
                 

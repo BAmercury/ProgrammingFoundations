@@ -23,7 +23,7 @@ Part 2:
 
 This program revovles around a main program loop. Upon execution the program first prompts the user for input. This is performed using a series of try-catch statements and if-else statements for user input validation. 
 
-The first level of user input validation is the try-catch statement, which aims to see if the user input matches the data type the Java scanner object is expecting. In any case where the data type does not match, the program prints that the input is wrong (as well as the Java exception) and then quits the program. The user will then have to rerun the program. 
+The first level of user input validation is the try-catch statement, which aims to see if the user input matches the data type the Java scanner object is expecting. In any case where the data type does not match, the program prints that the input is wrong (as well as the Java exception error) and then quits the program. The user will then have to rerun the program. 
 
 The second level of input validation is boundary validation. In which the given input is checked if it meets requirements specified in the assignment:
     - Sales Person Number: [1,5] (Between 1 and 5)
