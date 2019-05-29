@@ -1,5 +1,3 @@
-
-
 public abstract class TwoDShape extends Shape
 {
     // Constructor Definition
@@ -9,9 +7,6 @@ public abstract class TwoDShape extends Shape
         super(shape_name);
     }
 
-    // Get Area Method
-    // This method will be different for each shape so make it abstract
-    // Indvidual shape subclasses will inherit this method and change it to fit the needs
-    public abstract double get_area();
+    
 }
 

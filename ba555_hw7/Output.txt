@@ -1,0 +1,10 @@
+circle: Area=314.1592653589793
+square: Area=25.0
+triangle: Area=10.0
+circle: Area=28.274333882308138
+triangle: Area=31.5
+sphere: Area=394.0813824663036, Volume=735.6185806037665
+cube: Area=96.0, Volume=64.0
+sphere: Area=764.537988177612, Volume=1987.798769261791
+cube: Area=54.0, Volume=27.0
+tetrahedron: Area=27.712812921102035, Volume=7.542472332656506

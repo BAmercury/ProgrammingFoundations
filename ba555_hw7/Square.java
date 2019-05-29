@@ -1,6 +1,3 @@
-
-
-
 public class Square extends TwoDShape
 {
     // Input needed to calculate the area of a square would be simply the length of a  single side
@@ -27,7 +24,7 @@ public class Square extends TwoDShape
         return this.square_side_length;
     }
     // User will need to rerun the get_area method again if this is ran
-    public double set_side_length(double new_length)
+    public void set_side_length(double new_length)
     {
         this.square_side_length = new_length;
 
