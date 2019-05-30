@@ -19,12 +19,13 @@ Shape Class:
 
 The Shape class (With its corresponding subclasses) I implemented consists of the following members:
     - private variable to store the shape's name, with public getters and setters to access
-    - public abstract methods for getting the area and getting the volume (Depending on if its 2D or 3D)
+    - public abstract methods for getting the area and the volume (Depending on if its 2D or 3D)
 
 For the area and volume abstract methods, the individual subclasses (Circle, Square, Sphere, etc.)
 redefines/overrides the abstract definition with a specfic implementation that is custom to the type of shape
 it is. This abstraction allows for each shape to have its corresponding area and volume functions that
-can be accessed pubically using a get method in the outmost class (Shape class)
+can be accessed pubically using a get method in the outmost class (the Shape class, method is called get_data)
+This get data method returns the data formatted as a string. For the 3D shapes, the string specfically is comma delimited string containing both area and volume
 
 Main driver file:
 The steps of this driver program are to be:
@@ -62,4 +63,4 @@ square 2 0 0
 
 The driver program is designed to read in files, as well as write them, using try-catch blocks. The exception catch will print to the user
 that an error in reading/writing the file has occured. And it will instruct them to simply restart the program after evaluating the correctness of the input file
-or check to see if another resource is using the output file. In addition to this, the program will also print the specfic java exception
+or check to see if another resource is using the output file. In addition to this, the program will also print the specfic java exception for relevance
