@@ -46,6 +46,15 @@ sphere 5 0 0 0
 cube 4 0 0 0
 tetrahedron 4 0 0 0
 
+For each individual shape the data is as follows:
+circle radius x y
+square side_length x y
+triangle base height x y
+sphere radius x y z
+cube side_edge_length x y z
+tetrahedron sidge_edge_length x y z
+
+
 Note that the shape name should ideally be lowercase, but the code is designed to handle uppercase words
 by converting it to lowercase for the evaluations. Note that the output file will have lowercase headers
 
