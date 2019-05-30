@@ -2,8 +2,6 @@
 // Bhautik Amin
 // Drexel ID: 13618816
 // CS570 Assignment 7: Inheritance
-
-
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.File;

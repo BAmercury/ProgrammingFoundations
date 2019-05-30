@@ -1,4 +1,7 @@
-
+// ba555
+// Bhautik Amin
+// Drexel ID: 13618816
+// CS570 Assignment 7: Inheritance
 
 public class Circle extends TwoDShape
 {
@@ -17,7 +20,7 @@ public class Circle extends TwoDShape
 
     }
 
-    // Define methods to get and set the information
+    // Define methods to get and set the radius
     public double get_radius()
     {
         return this.circle_radius;

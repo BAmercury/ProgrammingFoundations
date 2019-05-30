@@ -1,3 +1,7 @@
+// ba555
+// Bhautik Amin
+// Drexel ID: 13618816
+// CS570 Assignment 7: Inheritance
 public abstract class TwoDShape extends Shape
 {
     // Constructor Definition

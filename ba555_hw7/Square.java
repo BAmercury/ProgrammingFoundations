@@ -1,3 +1,8 @@
+// ba555
+// Bhautik Amin
+// Drexel ID: 13618816
+// CS570 Assignment 7: Inheritance
+
 public class Square extends TwoDShape
 {
     // Input needed to calculate the area of a square would be simply the length of a  single side

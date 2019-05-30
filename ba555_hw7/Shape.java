@@ -1,4 +1,7 @@
-
+// ba555
+// Bhautik Amin
+// Drexel ID: 13618816
+// CS570 Assignment 7: Inheritance
 
 public abstract class Shape
 {
@@ -22,7 +25,8 @@ public abstract class Shape
         this.shape_name = new_name;
     }
 
-    // Define an abstract method that can be accessed pubically to get data from the subclasses
+    // Define an abstract method that can be used to access to get data from the subclasses (area and volume)
+    // The TwoD and ThreeD classes will respectivley implement this abstract method
     public abstract String get_data();
 
 

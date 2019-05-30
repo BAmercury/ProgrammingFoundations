@@ -1,6 +1,6 @@
 circle 5 0 0
-squakkkre 5 0 0
-triangle 4 -5 0 0
+square 5.5 0 0
+triangle 4 5 0 0
 sphere 5 0 0 0
 cube 4 0 0 0
-tetrahedron 4 0 0 0
+tetrahedron 4.5 0 0 0
