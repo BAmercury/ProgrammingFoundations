@@ -7,6 +7,16 @@ public abstract class TwoDShape extends Shape
         super(shape_name);
     }
 
+    public abstract double get_area();
+
+
+    // Define the get data method
+    // For 2D shape we just need to return the area
+    @Override
+    public String get_data()
+    {
+        return Double.toString(this.get_area());
+    }
     
 }
 

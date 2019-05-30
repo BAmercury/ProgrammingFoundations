@@ -1,3 +1,9 @@
+// ba555
+// Bhautik Amin
+// Drexel ID: 13618816
+// CS570 Assignment 7: Inheritance
+
+
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.File;
@@ -6,11 +12,12 @@ import java.io.FileWriter;
 
 /*
 
-The steps of this driver program are to be:
-    1. Read the shape data in
-    2. Store data in an array of shape data
-    3. Loop through array and output to a new file
+    This program serves as the driver program. The steps of this program are as follow:
+        1. Read the shape data in (From a file called Data.txt)
+        2. Store the data into a array list of shapes
+        3. Loop through given array and output calculated values to a new file (Output.txt)
 
+    Please refer to readme for furthur details regarding the input file format
 
 */
 
@@ -18,7 +25,7 @@ The steps of this driver program are to be:
 public class ba555_hw7
 {
 
-
+    // Declare Array list of shapes
     public static ArrayList<Shape> shapes;
     public static void main(String[] args) 
     {
@@ -29,7 +36,7 @@ public class ba555_hw7
         try (Scanner scan = new Scanner(new File("Data.txt")))
         {
 
-            // Look through the file
+            // Look through the file while the scanner has a line to read
             while (scan.hasNext() )
             {
                 // Get the entire line
@@ -94,7 +101,7 @@ public class ba555_hw7
         }
         catch (Exception e)
         {
-            System.out.println("Error reading in file: ");
+            System.out.println("Error reading in file. Please check format of input file and try again");
             System.out.println(e);
         }
 
@@ -109,14 +116,18 @@ public class ba555_hw7
                 //System.out.println(shape_name);
                 if (shape_name.equals("circle") || shape_name.equals("square") || shape_name.equals("triangle"))
                 {
-                    double area = shapes.get(i).get_area();
+                    // For a 2D shape, the get data method will simply return the area (formatted as a string)
+                    String area = shapes.get(i).get_data();
+                    // Compile string line to write to the output file
                     String to_write = shape_name + ":" + " Area=" + area + "\n";
                     writer.write(to_write);
                 }
                 else if(shape_name.equals("sphere") || shape_name.equals("cube") || shape_name.equals("tetrahedron"))
                 {
-                    double area = shapes.get(i).get_area();
-                    double volume = shapes.get(i).get_volume();
+                    String data = shapes.get(i).get_data(); // get data method for the 3DShape class returns comma delimited string of values
+                    String data_arr[] = data.split(","); // Convert string to array
+                    String area = data_arr[0]; // First index of array will be the area
+                    String volume = data_arr[1]; // Second index of this array will be the volume
                     String to_write = shape_name + ":" + " Area=" + area + ", Volume=" + volume + "\n";
                     writer.write(to_write);
                 }   
@@ -128,7 +139,7 @@ public class ba555_hw7
         }
         catch (Exception e)
         {
-            System.out.println("Error in outputting file");
+            System.out.println("Error in outputting file. Please ensure that the file isn't being used by another resource and try again");
             System.out.println(e);
         }
         

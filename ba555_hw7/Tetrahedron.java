@@ -29,12 +29,12 @@ public class Tetrahedron extends ThreeDShape
 
     // Define the get area and volume method for a Tetrahedron
     // Use override to provide specfic implementation of a super-class provided method
-    @Override
+    //@Override
     public double get_area()
     {
         return java.lang.Math.sqrt(3) * java.lang.Math.pow(this.tetra_edge_length, 2);
     }
-    @Override
+    //@Override
     public double get_volume()
     {
         return java.lang.Math.pow(this.tetra_edge_length, 3) / (6.0 * java.lang.Math.sqrt(2));

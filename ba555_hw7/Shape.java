@@ -22,12 +22,9 @@ public abstract class Shape
         this.shape_name = new_name;
     }
 
+    // Define an abstract method that can be accessed pubically to get data from the subclasses
+    public abstract String get_data();
 
-    // Get Area and Volume Methods
-    // This method will be different for each shape so make it abstract
-    // Indvidual shape subclasses will inherit this method and change it to fit the needs
-    //public abstract double get_area();
-    public abstract double get_area();
-    public abstract double get_volume();
+
 }
 

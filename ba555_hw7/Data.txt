@@ -1,10 +1,6 @@
-circle 10 20 5 
-square 5 1 1
-triangle 4 5 1 1
-circle 3 4 6.3 
-triangle 7 9 1 1
-sphere 5.6 1 1 1
-cube 4 1 1 1
-sphere 7.8 1 1 1
-cube 3 1 1 1
-tetrahedron 4 1 1 1
+circle 5 0 0
+squakkkre 5 0 0
+triangle 4 -5 0 0
+sphere 5 0 0 0
+cube 4 0 0 0
+tetrahedron 4 0 0 0
