@@ -12,12 +12,19 @@ import java.util.ArrayList;
 
 
 /*
+    This program uses stack data structures to check if a given expression is balanced
+    in terms of paranthesis
+    The order of operations for this main driver program are:
+    1. Read in file (Called Data.txt and must be in the same directory as the program)
+    2. Save file strings to a list
+    3. Iterate through list and send strings to check if its balanced (using a stack)
+    4. Save result string to a new list that will be used to print to file (called Output.txt)
+
+    This program will automatically exit if it detects an error:
+     - reading an input file 
+     - writing an output file
 
 
-    1. Read in file
-    2. Save file lines to a list
-    3. Pop string out of list and check if its balanced
-    4. Save result to a new list that will be used to print
 
 
 */
@@ -35,7 +42,6 @@ public class ba555_hw8 {
     // Method for checking if the expression is balanced
     public static boolean CheckBal(String exp)
     {
-        System.out.println(exp);
         // Declare return variable
         // true by default. Conditoinal check statements
         // in this method will flip this bool to false
@@ -67,6 +73,7 @@ public class ba555_hw8 {
             // Also is the stack is empty and there is a present right paranthesis
             // then that means that this char does not have a partner and the expression is
             // not balanced
+            // If partner is present, remove from stack
             switch (c_index)
             {
                 case ')':
