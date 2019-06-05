@@ -35,6 +35,7 @@ public class ba555_hw8 {
     // Method for checking if the expression is balanced
     public static boolean CheckBal(String exp)
     {
+        System.out.println(exp);
         // Declare return variable
         // true by default. Conditoinal check statements
         // in this method will flip this bool to false
@@ -61,12 +62,15 @@ public class ba555_hw8 {
                     break;
             }
 
-            // If the character is a right most paranthesis
+            // If the character is a right  paranthesis
             // If so, check the stack to see if it's partner is there
+            // Also is the stack is empty and there is a present right paranthesis
+            // then that means that this char does not have a partner and the expression is
+            // not balanced
             switch (c_index)
             {
                 case ')':
-                    if (stack.peek() != '(')
+                    if (stack.isEmpty() || stack.peek() != '(')
                     {
                         result = false;
                     }
@@ -76,7 +80,7 @@ public class ba555_hw8 {
                     }
                     break;
                 case '}':
-                    if (stack.peek() != '{')
+                    if (stack.isEmpty() || stack.peek() != '{')
                     {
                         result = false;
                     }
@@ -86,7 +90,7 @@ public class ba555_hw8 {
                     }
                     break;
                 case ']':
-                    if (stack.peek() != '[')
+                    if (stack.isEmpty() || stack.peek() != '[')
                     {
                         result = false;
                     }
@@ -95,18 +99,6 @@ public class ba555_hw8 {
                         stack.pop();
                     }
                     break;
-            }
-
-            // Check to ensure the stack is empty
-            // If not empty, then the expression must
-            // be unbalanced
-            if (stack.isEmpty())
-            {
-               result = true;
-            }
-            else
-            {
-                result = false;
             }
 
         }
